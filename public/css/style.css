@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+	--dark-color-a: #E50914;
+	--dark-color-b: #E50914;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+	--bg-join_container: rgb(20,20,20)
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: "Gochi Hand", cursive;
+	min-height: 70vh;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+    align-items: center;
+	font-size: 16px;
+	background: var(--bg-join_container);
+	margin: 20px;
+	background-image: url(https://wallup.net/wp-content/uploads/2018/10/04/300602-blue-minimalistic-origami-funny-swans-blue-background-748x468.jpg);
+}
+
+@media only screen and (min-width: 500px) { 
+	body {
+	min-height: 90vh;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: black;
+	border: 0;
+	font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+	width: 100%;
+	max-width: 900px;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.chat-header {
+	background: rgb(108 30 197);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-heading{
+	background-color: rgba(0, 255, 196, 0.7);
+	border-radius: 20% 5% 10% 5%/5% 10% 25% 20%;
+	transform: rotate(4deg);
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background: #7327cabd;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 15px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: rgb(100 38 153);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* Join Page */
+.join-container {
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	min-width: 250px;
+	max-height: 500px;
+	background: #f1f5f8;
+	background-image: radial-gradient(#bfbfc1c4 8%, #f1f5f800 0);
+	border-radius: 20px;
+	background-size: 25px 25px;
+	color: black;
+	padding: 1rem;
+	
+}
+.heading{
+	transform: rotate(2deg);
+	border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    background-color: rgba(0, 255, 196, 0.7);
+}
+.join-header {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+	background-color: transparent;
+	border: solid 3px transparent;
+    border-bottom: dashed 3px #ea95e0;
+	color: rgba(63, 62, 65, 0.7);
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+	background-color: transparent;
+	border: solid 3px transparent;
+    border-bottom: dashed 3px #ea95e0;
+	color: rgba(63, 62, 65, 0.7);
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 50%;
+	text-align: center;
+	align-items: flex-start;
+	padding: 0;
+    border: none;
+    transform: rotate(4deg);
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: rgba(0, 255, 196, 0.7);
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
